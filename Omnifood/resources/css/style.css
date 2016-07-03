@@ -16,27 +16,59 @@ html{
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /*------------------------------------*/
 /* REUSABLE */
 /*------------------------------------*/
 .row{
-    max-width: 1140px;
+    width: 1140px;
     margin: 0 auto;
 }
 
+section{
+    padding: 80px 0px;
+}
+
 /*-------HEADING-------*/
-h1{
+
+h1,
+h2,
+h3{
     margin: 0;
-    color: #fff;
-    font-size: 200%;
     font-weight: 300;
-    letter-spacing: 1px;
-    word-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 20px;
+}
+
+h1{
+    font-size: 200%;
+    word-spacing: 4px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-size: 170%;
+    word-spacing: 3px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h2:after{
+    display: block;
+    content: " ";
+    width: 100px;
+    height: 2px;
+    background-color:  #e67e22;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+h3{
+    font-size: 110%;
+    word-spacing: 2px;
 }
 
 /*-------BUTTONS-------*/
@@ -122,9 +154,30 @@ header{
     border-bottom: 2px solid #e67e22;
 }
 
+/*------------------------------------*/
+/* SECTION FEATURE */
+/*------------------------------------*/
+.long-copy{
+    width: 70%;
+    line-height: 145%;
+    margin-left: 15%;
+    letter-spacing: 1px;
+}
 
+.box{
+    padding: 1%;
+}
 
+.box i{
+    display: block;
+    color: #e67e22;
+    font-size: 350%
+}
 
+.box p{
+    line-height: 145%;
+    font-size: 90%;
+}
 
 
 
