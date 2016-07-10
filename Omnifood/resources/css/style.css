@@ -19,6 +19,15 @@ html{
     font-size: 20px;
 }
 
+.clearfix{zoom: 1}
+.clearfix:after{
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
 /*------------------------------------*/
 /* REUSABLE */
 /*------------------------------------*/
@@ -31,8 +40,33 @@ section{
     padding: 80px 0px;
 }
 
-/*-------HEADING-------*/
+.box{
+    padding: 1%;
+}
 
+/*--------ICON--------*/
+.icon-large{
+    display: block;
+    color: #e67e22;
+    font-size: 350%
+}
+.icon-small{
+    color: #e67e22;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /* secrete to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    
+    
+}
+
+/*-------HEADING-------*/
 h1,
 h2,
 h3{
@@ -169,16 +203,6 @@ header{
     letter-spacing: 1px;
 }
 
-.box{
-    padding: 1%;
-}
-
-.box i{
-    display: block;
-    color: #e67e22;
-    font-size: 350%
-}
-
 .box p{
     line-height: 145%;
     font-size: 90%;
@@ -219,9 +243,49 @@ header{
     opacity: 1;
 }
 
+/*------------------------------------*/
+/* SECTION HOW IT WORKS */
+/*------------------------------------*/
 
-
-
+.section-steps{
+    background-color: #ededed;
+}
+.steps-box:first-child{
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 50px;
+}
+.steps-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+.works-step{
+    margin-bottom: 50px;
+}
+.works-step:last-of-type{
+    margin-bottom: 100px;
+}
+.works-step div{
+    color: #e67e22;
+    border: 2px solid #e67e22;
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 150%;
+    padding: 5px;
+    float: left;
+    margin-right: 20px;
+}
+.steps-box img{
+    width: 40%;
+}
+.app-btn img{
+    height: 50px;
+    width: auto;
+    margin-right: 30px;
+}
 
 
 
